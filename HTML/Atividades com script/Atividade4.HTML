@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+</head>
+<body>
+    <input type ="text" id="nome" placeholder="Digite seu nome: ">
+    <button onclick="mostrarnome()">Mostrar</button>
+    <p id="mensagem"></p>
+
+    <script>
+      function mostrarnome(){
+        let nomePessoa = document.getElementById('nome').value;
+        var aviso = document.getElementById('mensagem');
+       
+        if (nomePessoa.length == 0 ){
+            /*Aqui informa o campo obrigatorio com o avisao alert*/
+         alert("Campo Obrigatorio, informe seu nome!");
+        }
+        else{
+          /*Aqui informa  o nome da pesso sem ser um aviso*/
+        aviso.innerText = 'Bem-vindo(a), ' + nomePessoa;
+        }
+      }
+    </script>
+</body>
+</html>

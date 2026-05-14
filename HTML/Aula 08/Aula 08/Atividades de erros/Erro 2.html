@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro 2</title>
+</head>
+<body>
+    <input id="nome">
+<input id="cidade">
+
+<button onclick="mostrar()">Mostrar</button>
+
+<p id="resultado"></p>
+
+<script>
+function mostrar(){
+  let nome = document.getElementById("nome").value/*o id dos dois estavao trocados*/
+  let cidade = document.getElementById("cidade").value
+
+  document.getElementById("resultado").innerText =/*Resultado escrito incompleto*/
+    "Olá " + nome + ", você mora em " + cidade
+}
+</script>
+</body>
+</html>

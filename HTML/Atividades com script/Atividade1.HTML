@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+    <input type ="text" id="nome" placeholder="Digite seu nome">
+    <button onclick="mostrarNome()">Mostrar</button>
+    <p id="mensagem"></p>
+
+    <script>
+      function mostrarNome(){
+        let nomePessoa = document.getElementById('nome').value;
+        var aviso = document.getElementById('mensagem');
+        if (nomePessoa == "" ){
+            aviso.innerText = "Digite seu nome";
+         alert("Digite seu nome!");
+        }
+        else{
+        aviso.innerText = "Olá, " + nomePessoa;
+        alert('Seja Bem-Vindo ' + nomePessoa);
+        }
+      }
+    </script>
+</body>
+</html>

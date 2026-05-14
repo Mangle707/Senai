@@ -1,0 +1,26 @@
+body {
+    background-image: url("../img/Nuvens.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+#resultado {
+    background-color: rgba(252, 252, 252, 0.788);
+    border-radius: 5px;
+    color:rgb(91, 102, 122);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;/*<weight>: Use a value from 100 to 900,
+                        <uniquifier>: Use a unique and descriptive class name*/
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+   border-radius: 5px;
+
+    
+
+}
+p { color:rgb(67, 86, 104)}
+
+ul {
+    color: rgb(239, 121, 255);
+}

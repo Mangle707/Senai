@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body>
+    <input type ="text" id="idade" placeholder="Digite sua idade">
+    <button onclick="mostrarIdade()">Mostrar</button>
+    <p id="mensagem"></p>
+
+    <script>
+      function mostrarIdade(){
+        let idadePessoa = document.getElementById('idade').value;
+        var aviso = document.getElementById('mensagem');
+        if (idadePessoa == "" ){
+            aviso.innerText = "Digite sua idade";
+         alert("Informe sua idade!");
+        }
+        else{
+        alert('voce tem  ' + idadePessoa + ' anos');
+        }
+      }
+    </script>
+</body>
+</html>

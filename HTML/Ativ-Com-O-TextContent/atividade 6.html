@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 6</title>
+</head>
+<body>
+    <label for="">idade</label>
+    <input type="text" name="" id="inp_idade" placeholder="digite sua idade">
+     
+    <button onclick="mostrar_idade()">Clicar</button>
+    <p id="resultado"></p>
+    <script>
+        function mostrar_idade(){
+            let idade = document.getElementById("inp_idade").value 
+
+            if (idade <= 18){
+                document.getElementById("resultado").textContent = `Voce é menor de idade`
+
+            }
+            else{
+                document.getElementById("resultado").textContent = `Voce é maior de idade`
+            }
+        }
+    </script>
+</body>
+</html>

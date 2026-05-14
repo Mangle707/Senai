@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+body{
+    background:#008686;
+    background-attachment: (135deg, #004e4e, #00B8B8);
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    padding:30px;
+}
+
+.form-container,
+.card{
+    width:350px;
+    height:540px;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.form-container{
+    padding:25px;
+}
+
+.form-container h1{
+    color:#5842D6;
+    margin-bottom:30px;
+}
+
+label{
+    display:block;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-top:5px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin-top:30px;
+    border:none;
+    border-radius:5px;
+    background:#5842D6;
+    color:#fff;
+    font-weight:bold;
+}
+.card{
+    display: none;
+}
+
+.topo{
+    width:100%;
+    height:120px;
+    background:#5475EB;
+}
+
+.card{
+    text-align:center;
+}
+
+.card img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:5px solid white;
+    margin-top:-50px;
+    background:#ccc;
+}
+
+.card h2{
+    margin-top:15px;
+    font-size:40px;
+}
+
+.card h3{
+    color:#5475EB;
+    margin-top:10px;
+}
+
+.card p{
+    text-align:left;
+    margin:20px;
+    font-size:18px;
+}
+
+hr{
+    width:80%;
+    margin:20px auto;
+}

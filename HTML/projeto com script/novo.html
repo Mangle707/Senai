@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto com Script</title><!--Script dentro do codigo-->
+</head>
+<body>
+    <!--Essse botao chama a funçao mensagem ao clicar-->
+    <button onclick="mensagem()">Clique Aqui!</button>
+    <br>
+    <!--Aqui o site coleta informaçoes para a caixa de digitaçao-->
+    <input type ="text" id="nome" placeholder="Digite seu nome">
+    <!--Ao clicar no botao enviar vai chamar a funcao MostraNome-->
+    <button onclick="mostrarNome()">Clique aqui</button>
+    <br>
+    <p id="pagina">Texto Antigo</p>
+    <script>
+        function mensagem(){
+            let mensagem ="seja bem Vindo"
+        alert(mensagem)
+        }
+        function mostrarNome(){
+            /*Aqui ele vai procurar o id chamado nome para alterar*/
+            let nomePessoa = document.getElementById('nome').value;
+            /*aqui ele retorna o bem vindo mais o nome digitado pelo usuario*/
+            alert('Seja Bem-Vindo(a) '+ nomePessoa)
+        }
+        /*Muda o texto do paragrafo definido pelo ID = "pagina"*/
+        document.getElementById("pagina").innerText="Texto Atual"
+    </script>
+</body>
+</html>

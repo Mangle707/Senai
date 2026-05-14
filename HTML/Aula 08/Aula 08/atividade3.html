@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,
+wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!--Link do estilo da fonte pelo google fonts-->
+    <link rel="stylesheet"href="css/style.css">
+    <link rel="stylesheet"href="img">
+    <!--Link da pasta CSS-->
+    <title>Atividade 3</title>
+</head>
+<body>
+    <input type="text" id="inp_nome" placeholder="Digite o nome do produto: ">
+    <input type="text" id="inp_preco" placeholder="Digite o preco do produto: ">
+     
+    <button onclick="validar()">Cadastrar</button><!--Aqui ele vai chamar a funcao validar-->
+    <p id="resultado"></p>
+    <script>
+        function validar(){
+            let nomeprod = document.getElementById("inp_nome").value
+            let precoprod = document.getElementById("inp_preco").value
+           
+            if (nomeprod == "" || precoprod == ""){/* os traços || sao o OU*/
+                document.getElementById("resultado").innerHTML = "<p>Digite Novamente a algo faltando</p>"
+                /*no innerHTML ele vai alterar colocando uma tag junto com o que voce quer que apareca*/
+            }
+            else {
+                            /* o += vai fazer com que voce possa adcionar mais de uma pesso a e idade*/
+                document.getElementById("resultado").innerHTML += 
+                 "<hr><h3>Nome: " + nomeprod +
+                 " </h3><p><strong>Preco: R$<em>" + precoprod + 
+                 ",00</strog></em> </p>";
+
+                
+            }
+       }
+    
+    </script>
+    
+</body>
+</html>

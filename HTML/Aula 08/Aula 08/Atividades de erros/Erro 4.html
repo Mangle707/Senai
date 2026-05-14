@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro 4</title>
+</head>
+<body>
+    <input id="idade">
+
+<button onclick="verificar()">Verificar</button>
+
+<p id="resultado"></p>
+
+<script>
+function verificar(){
+  let idade = document.getElementById("idade").value
+
+  if(idade >= 18){ // Adicionado o "=" para incluir quem tem 18
+    document.getElementById("resultado").innerText = "Maior de idade"
+  }
+  else { // Estava sem o else adicionado, o caminho para menores de 18
+    document.getElementById("resultado").innerText = "Menor de idade"
+  }
+}
+</script>
+</body>
+</html>

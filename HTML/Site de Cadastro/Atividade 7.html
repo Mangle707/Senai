@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>atividade 7</title>
+<body>
+
+<div class="form-container">
+
+    <h1>Preencha os dados</h1>
+
+    <label>Nome</label>
+    <input type="text" id="inp_nome" placeholder="Digite seu nome">
+
+    <label>Idade</label>
+    <input type="text" id="inp_idade" placeholder="Digite sua idade">
+
+    <label>Curso</label>
+    <input type="text" id="inp_curso" placeholder="Digite seu curso">
+
+    <label>Cidade</label>
+    <input type="text" id="inp_cidade" placeholder="Digite sua cidade">
+
+    <button onclick="Gerar()">Gerar cartão</button>
+
+    <div id="mensagem"></div>
+
+</div>
+
+<div class="card">
+
+    <div class="topo"></div>
+
+    <img src="https://via.placeholder.com/100">
+
+    <h2 id="resultado_nome"></h2>
+
+    <h3 id="resultado_idade"></h3>
+
+    <hr>
+
+    <p id="resultado_curso"></p>
+
+    <p id="resultado_cidade"></p>
+
+</div>
+
+<script>
+
+function Gerar(){
+
+    let nome = document.getElementById("inp_nome").value
+    let idade = document.getElementById("inp_idade").value
+    let curso = document.getElementById("inp_curso").value
+    let cidade = document.getElementById("inp_cidade").value
+
+    if(nome == "" || idade == "" || curso == "" || cidade == ""){
+
+        document.getElementById("mensagem").innerHTML =
+        "<h4>Preencha todos os campos!</h4>"
+
+    } else {
+        document.querySelector(".card").style.display = "block";
+        document.getElementById("resultado_nome").innerHTML = nome
+
+        document.getElementById("resultado_idade").innerHTML =
+        idade + " anos"
+
+        document.getElementById("resultado_curso").innerHTML =
+        "<b>Curso:</b> " + curso
+
+        document.getElementById("resultado_cidade").innerHTML =
+        "<b>Cidade:</b> " + cidade
+
+        document.getElementById("mensagem").innerHTML = ""
+    }
+}
+
+</script>
+
+</body>

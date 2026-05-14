@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro 5</title>
+</head>
+<body>
+    <input id="cidade">
+
+<button onclick="mostrar()">Mostrar</button>
+
+<p id="resultado"></p>
+
+<script>
+function mostrar(){
+  let cidade = document.getElementById("cidade").value
+                // Corrigido de "Resultado" para "resultado"
+  document.getElementById("resultado").innerText =
+    "Você mora em " + cidade
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro 1</title>
+</head>
+<body>
+    <input id="nome">
+<input id="idade">
+
+<button onclick="verificar()">Verificar</button>
+
+<p id="resultado"></p>
+
+<script>
+function verificar(){
+  
+  let nome = document.getElementById("nome").value
+  let idade = document.getElementById("idade").value
+    /*Estava sem o id do resultado, nome e idade*/
+  document.getElementById("resultado").innerText =
+    "Nome: " + nome + " - Idade: " + idade
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+body {
+    background-color: rgb(245, 222, 174);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;/*separa a lista para ficar um do lado do outro*/
+    justify-content: space-between;
+    background-color: rgb(112, 163, 102);
+    color:rgba(255, 255, 255, 0.705);
+    padding: 15px;
+    align-items: center;/*faz a lista ficar no centro do outro*/
+    
+}
+.navbar ul{
+      list-style:none;
+      display:flex;
+      gap:10px;/*separa os elementos um do outro*/
+     
+      
+}
+.navbar a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.911);/*Deu a cor para a lista Home,Contatos e sobre*/
+    
+}
+/*.hero muda a secao do bem-vindo*/
+.hero{
+    text-align: center;
+    background-image: url("../img/papelamassadotextura.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 40px;
+    color:white;
+    
+}
+.hero p{
+    color:rgb(5, 5, 5);
+}
+.hero h1{
+    color:rgb(3, 97, 26)
+}
+.papel{
+    text-align: center;
+    background-image: url("../img/papelamassadotextura.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width:100%;
+    height: 100%;
+}
+.cards{
+
+    display: flex;
+    justify-content: space-around;/*espaça eles pela tela*/
+    padding:15px;
+    gap:10px;
+    height: 20%;
+    background-color:rgb(202, 170, 101);
+}
+.card{
+    text-align: center;
+    width: 30%;
+   
+    background-color: rgba(103, 158, 92, 0.918);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.678);
+    color:white
+     
+}
+button{
+    background-color:rgb(100, 155, 103);
+    border: 1px solid ;
+    color:white;
+    border-radius:5px;
+}
+button :hover{
+    background-color:aliceblue
+}
+footer{
+    background-color: rgb(112, 163, 102);
+    color:black;
+    padding:5px;
+    text-align: center;
+}
+         /*PAGINA SOBRE*/
+.sobre{
+    background-color:rgb(34, 68, 1);
+    gap: 200px;
+}
+.container{
+    background-color:rgb(202, 170, 101);
+    display:flex;
+    padding:20px;
+    gap:5px;
+
+}
+.imagem{
+    background-image:url("../img/GreenLife.jpg");
+    display:flex;
+     padding:100px;
+     gap:10px;
+     height: 50px;
+     width:400px;
+    border-radius: 20px;
+    background-position:center;
+    background-repeat: no-repeat;
+       background-size: cover;
+    
+}
+.imagem2{
+    background-image:url("../img/mulher.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    border-radius: 20px;
+    padding:100px;
+     gap:10px;
+     height: 10px;
+     width:40px;
+}
+.texto{
+  height: 200px;
+  width: 300px;
+  color: white;
+}
+.texto p{
+  height: 50px;
+  width: 500px;
+ 
+}
+.cardsobre{
+    text-align: center;
+    width: 30%;
+   
+    background-color: rgb(34, 68, 1);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.678);
+    color:white
+}
+.sobreh2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/*CONTATOS*/
+.containerContato{
+    background-image:url("../img/folhas.avif");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    padding:20px;
+    color: aliceblue;
+    border-radius: 20px;
+    gap: 15px;
+    
+}
+.formulario{
+   display:flex;
+   flex-direction: column;
+   height:570px;
+   width: 50%;
+   background-color: rgba(255, 255, 255, 0.699);
+   padding:10px;
+   
+   
+}
+.formulario input, textarea{
+    padding-bottom: 10px;
+    margin-bottom:10px;
+    color:rgba(0, 0, 0, 0.418)
+
+}
+.formulario label{
+    color:rgb(17, 63, 3)
+}
+.formulario button{
+    color:aliceblue;
+    padding:10px;
+}
+.info{
+    width: 50%;
+    background-color: rgba(60, 119, 1, 0.918);
+    border-radius: 10px;
+    padding:10px;
+    text-align: center;
+    
+    
+}
+

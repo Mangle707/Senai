@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Atividade 2</title>
+</head>
+<body>
+    <input type="text" id="inp_nome" placeholder="Digite seu nome: ">
+    <input type="text" id="inp_nota" placeholder="Digite sua nota: ">
+    <!-- Ajustado para chamar a função correta: cartao -->
+    <button onclick="cartao()">Enviar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function cartao(){
+            let nome = document.getElementById("inp_nome").value
+            let nota = document.getElementById("inp_nota").value
+           
+            // Ajustado: agora verifica 'nome' e 'nota' (conforme seus inputs)
+            if (nome == "" || nota == ""){
+                document.getElementById("resultado").innerHTML = "<p>Digite Novamente, há algo faltando</p>"
+            }
+            else {
+                let status;
+                let cor;
+
+                // Ajustado: lógica de nota e definição das variáveis de status
+                if (nota >= 7) {
+                    status = "Aprovado";
+                    cor = "green";
+                } else {
+                    status = "Reprovado";
+                    cor = "red";
+                }
+                
+                // Ajustado: removido curso/idade e adicionado o status com cor
+                document.getElementById("resultado").innerHTML += 
+                 "<hr><p><strong>Nome: </strong> <em>" + nome + 
+                 "</em> 🎉</p><p><strong>Nota: </strong> <em>" + nota + 
+                 "</em></p><p><strong>Status: </strong> <strong style='color:" + cor + "'>" + status + "</strong></p>";
+            }
+       }
+    </script>
+</body>
+</html>

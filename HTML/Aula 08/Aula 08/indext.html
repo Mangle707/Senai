@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,
+wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!--Link do estilo da fonte pelo google fonts-->
+    <link rel="stylesheet"href="css/style.css">
+    <link rel="stylesheet"href="img">
+    <!--Link da pasta CSS-->
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp_nome" placeholder="😀Digite seu nome: ">
+    <input type="text" id="inp_idade" placeholder="🤩Digite sua idade: ">
+    <button onclick="validar()">Enviar</button><!--Aqui ele vai chamar a funcao validar-->
+    <p id="resultado"></p>
+    <script>
+        function validar(){
+            let nome = document.getElementById("inp_nome").value
+            let idade = document.getElementById("inp_idade").value
+
+            if (nome == "" || idade == ""){/* os traços || sao o OU*/
+                document.getElementById("resultado").innerHTML = "<p>Digite Novamente</p>"
+                /*no innerHTML ele vai alterar colocando uma tag junto com o que voce quer que apareca*/
+            }
+            else {
+                            /* o += vai fazer com que voce possa adcionar mais de uma pesso a e idade*/
+                document.getElementById("resultado").innerHTML += "<hr><p>Nome: " + nome + 
+                    " 🎉</p><p>Idade: " + idade + " 🎉</p>"
+                
+            }
+       }
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+create database teste;
+use teste;
+create table cadastro(
+id_participante int not null primary key,
+nomeCompleto varchar(1000) not null,
+Cidade varchar(1000) not null,
+idade int not null,
+participanteEmClube varchar(100) /*Nessa linha informar se o participante esta ativo ou nao*/
+);
+-- qual participante realizou a atividade,
+-- o valor pago pela atividade,
+-- e a data em que ela ocorreu.
+create table atividades(
+id_atividade int not null primary key,
+id_participante int  not null,
+valor int not null,
+DataOcorrida date not null,
+foreign key (id_participante) references cadastro (id_participante)
+);
+insert into cadastro(id_participante,nomeCompleto,Cidade,idade,participanteEmClube)
+Values(2,'Leandro','Londrina',27,'Sim'),
+	  (3,'Erick','Maceio',26,'Nao'),
+      (4,'Lana','Porto Alegre',30,'Nao'),
+      (5,'juvens','São Paulo',25,'Sim');
+      
+insert into atividades(id_atividade,id_participante,valor,DataOcorrida)
+Values(2,4,1600,'2009-01-11'),
+      (3,5,1000,'2012-06-21'),
+      (4,1,2600,'2022-12-22'),
+      (5,3,1400,'2014-02-03'),
+      (6,5,1750,'2023-01-24'),
+      (7,1,3600,'2025-05-01'),
+      (8,2,2600,'2025-09-08');
+select * from atividades;
+-- 1 atividade
+select * from cadastro where Cidade in ('São Paulo','Maceio');
+-- 2 atividade 
+select * from cadastro where idade between 20 and 30;
+-- 3 atividade
+select * from  cadastro where Cidade like '%Londrina';
+-- 4 atividade
+select * from cadastro limit 3;
+-- 5 atividade
+SELECT c.nomeCompleto, SUM(a.valor) AS total_gasto
+FROM cadastro c
+JOIN atividades a ON c.id_participante = a.id_participante
+GROUP BY c.nomeCompleto;
+-- 6 atividade
+SELECT c.nomeCompleto, a.valor, a.DataOcorrida
+FROM cadastro c
+INNER JOIN atividades a ON c.id_participante = a.id_participante;
