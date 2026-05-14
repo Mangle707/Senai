@@ -1,0 +1,38 @@
+programa
+{
+	
+	funcao inicio()
+	{ 
+         inteiro hora
+	
+		escreva("Digite hora: ")
+		leia(hora)
+
+          se (hora >= 6 e hora < 12){
+          	escreva("Bom dia")
+          }
+          senao se (hora >=12 e hora < 18){
+          	escreva("Boa tarde")
+          }
+
+          senao se (hora >=18 e hora <= 23){
+          	escreva("boa noite")
+
+          }
+          senao {
+          	escreva("Boa madrugada")
+          }
+		
+	}
+}
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 363; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
