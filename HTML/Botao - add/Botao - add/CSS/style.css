@@ -1,0 +1,17 @@
+#retangulo{
+    background-color: rgb(59, 248, 248);
+    width: 20%;
+    height: 100px;
+    margin-top: 40px;
+}
+ #quadrado_pequeno {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(75, 174, 255);
+    cursor: pointer;
+    margin-bottom: 10px;
+ }
+body{
+    background-color: rgb(169, 255, 255);
+    color:white;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="CSS/style.css">
+    <title>nome e prof com AddEvent</title>
+</head>
+<body>
+    <label for ="digite seu nome">Nome:</label>
+    <input type ="text" id="nome">
+    <label for ="digite sua profissao">Profissao:</label>
+    <input type ="text" id="profissao">
+    <button id="bt_enviar">Enviar</button>
+
+    <div>
+        <p id="card_nome"></p>
+        <p id="card_profissao"></p>
+    </div>
+    <script>
+       const nome = document.getElementById ("nome").value
+       const profissao = document.getElementById ("profissao").value
+       const bt_enviar = document.getElementById("bt_enviar")
+       const card_nome = document.getElementById ("card_nome")
+       const card_profissao = document.getElementById ("card_profissao")
+       bt_enviar.addEventListener("click", function(){
+        //o que o usuário digitou ATUALMENTE nos campos
+        card_nome.textContent = `Nome: ${nome.value}`
+        card_profissao.textContent = `Profissao: ${profissao.value}`
+       })
+
+    </script>
+</body>
+</html>

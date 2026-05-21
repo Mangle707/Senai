@@ -1,0 +1,6 @@
+Dia 20/05/2026 -- Aula HTML
+
+.addEventListener = adciona um evento a sua variavel sem precisar do "Onclick" no botao, mais é preciso declarar a constante antes no script. 
+É dentro do EventListener que é colocado o codigo para mudar o texto quando o botao for clicado igual no codigo index.html.
+
+variavel.style.backgroundColor = "blue" <- isso aqui mudar a cor de fundo do estilo dentro do proprio script.

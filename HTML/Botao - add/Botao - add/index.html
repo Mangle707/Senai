@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="CSS/style.css">
+    <title>botao - add eventlistener</title>
+</head>
+<body>
+    <!--Utilizando o eventlistener no botao para mudar palavras-->
+    <p id="titulo">Titulo 1</p>
+    <button id="mudar">Clicar</button>
+    <div id="retangulo"></div><!--Aqui nao pode ser class tem que ser
+     id pro script conseguir ler-->
+    <button id="mudar_retangulo">mudar cor</button>
+    <script>
+       const mudar = document.getElementById("mudar")
+       const titulo = document.getElementById("titulo")
+       //const usadadas para fazer o botao mudar de cor 
+       const retangulo = document.getElementById("retangulo")
+       const bot_retangulo = document.getElementById("mudar_retangulo")
+
+       mudar.addEventListener("click",function(){
+        //Aqui dentro que e colocado para mudar a frase do titulo qundo o botao for clicado
+        titulo.textContent = `Titulo 2`
+        
+       })
+       //Aqui vai mudar a cor quando passar o mouse em cima da cor ou botao
+       bot_retangulo.addEventListener("mouseover", function(){
+        retangulo.style.backgroundColor = "white"
+       })
+       bot_retangulo.addEventListener("mouseout", function(){
+        retangulo.style.backgroundColor = "rgb(59, 248, 248)"
+       })
+    </script>
+</body>
+</html>

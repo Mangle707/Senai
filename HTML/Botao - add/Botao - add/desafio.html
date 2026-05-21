@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="CSS/style.css">
+    <title>botao - muda de cor</title>
+</head>
+<body>
+
+     <div id="quadrado_pequeno"></div>
+    <div id="retangulo"></div><!--Aqui nao pode ser class tem que ser
+     id pro script conseguir ler-->
+   
+    <script>  
+       const retangulo = document.getElementById("retangulo")
+       const bot_retangulo = document.getElementById("mudar_retangulo")
+       const quadradoPequeno = document.getElementById("quadrado_pequeno")
+       //const para fazer o botao voltar a cor original
+       const corOriginal = "rgb(59, 248, 248)"
+       //e um if para ele mudar de cor novamente
+       quadradoPequeno.addEventListener("click", function(){
+        
+          if (retangulo.style.backgroundColor === corOriginal) {
+        // Se for a original, muda para amarelo
+        retangulo.style.backgroundColor = "white"
+    } else {
+        // Se já estiver amarelo, volta para a cor original
+        retangulo.style.backgroundColor = corOriginal
+    }
+       })
+       
+    </script>
+</body>
+</html>
