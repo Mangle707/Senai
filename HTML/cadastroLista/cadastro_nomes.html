@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro nomes</title>
+</head>
+<body>
+    <input type="text"id="inp_nome"placeholder="digite seu nome">
+    <button id="bt_enviar">Enviar</button>
+    <ul id="lista"></ul>
+
+    <script>
+         let array_nomes = [] //aqui vai ser armezenado os nomes
+        let botao = document.getElementById("bt_enviar")
+
+        botao.addEventListener("click",adcionar)//quando clicar no botao vai chamar a funcao adcionar
+
+        function adcionar(){
+            let nome = document.getElementById("inp_nome").value 
+            array_nomes.push(nome)//e aqui vai mandar para o array (lista) de nomes
+
+            atualizarLista()//chama a funcao lista
+        }
+        //atualiza em tempo real
+        function atualizarLista(){
+            let lista = document.getElementById("lista")
+            lista.innerHTML = ""
+            for (let i = 0 ; i < array_nomes.length; i++){//vai percorrer detro da lista nomes para atualizar
+                lista.innerHTML +=
+                `<li>${array_nomes[i]}</li>`//aqui ja e mostrado os nomes digitados em lista
+            }
+        }
+    </script>
+</body>
+</html>
