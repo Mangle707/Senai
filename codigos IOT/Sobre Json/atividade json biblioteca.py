@@ -69,6 +69,10 @@ arquivo = {
     ]
   }
 }
-print("=== LISTA DE LIVROS DOS AUTORES ===")
+print("=== LISTA DE AUTORES ===")
 for autores in arquivo["biblioteca"]["autores"]:
     print(f"ID: {autores['id']} | Nome: {autores['nome']} | Nascimento: {autores['ano_nascimento']} | País: {autores['pais']}")
+
+print("=== LISTA DE LIVROS ===")
+for livros in arquivo["biblioteca"]["livros"]:
+    print(f"ID: {livros['id']} | Titulo: {livros['titulo']} | Lancamento: {livros['ano_lancamento']} | Genero: {livros['genero']}")
