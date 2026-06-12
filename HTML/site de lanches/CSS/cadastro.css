@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#2c2c2c;
+    padding:20px;
+}
+
+.container{
+    max-width:600px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:rgb(255, 255, 255)
+}
+
+.pedido-form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+    margin-bottom:30px;
+}
+
+.pedido-form label{
+    font-weight:bold;
+}
+
+.pedido-form input,
+.pedido-form select{
+    padding:8px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+.pedido-form button{
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    background:#ff9100;
+    color:white;
+    cursor:pointer;
+}
+
+.pedido-form button:hover{
+    background:#333333;
+}
+
+.pedido-detalhes{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+#listaPedido{
+    margin:15px 0;
+    padding-left:20px;
+}
+
+#total{
+    font-weight:bold;
+    font-size:16px;
+}
