@@ -1,0 +1,12 @@
+#include <PubSubClient.h>
+//uma biblioteca que vai ajudar a conectar no broker e enviar no broker
+e preciso importar a biblioteca 
+
+#include <WiFi.h> uma biblioteca que serve pra incluir o wifi
+
+randomSeed(micros())//vai gerar um valor aleatorio
+
+client.setCallback(callback);//callback geralmente relacionado a erro mais nao sao todas as vezes sera por erro,
+ele funciona como um retorno de valor pode ser tanto pra bom ou ruim.
+
+Topico = e como se fosso o caminho de uma pasta para o mqtt
